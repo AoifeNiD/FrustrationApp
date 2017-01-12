@@ -1,0 +1,155 @@
+
+
+
+<!-- about.html -->
+<div class="page-header text-center">
+    <h1>Place your ratings</h1>
+</div>
+
+<div id="slidercont1">
+
+        <label for="amount1">Rate your experience of YouTube from very easy to use to very hard to use:</label>
+        <input type="text" id="amount1" class="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+    <div id="slider1" class="slider"></div>
+    <br>
+
+    <label for="amount2">Rate your experience of Facebook from very easy to use to very hard to use:</label>
+    <input type="text" id="amount2" class="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+    <div id="slider2" class="slider"></div>
+    <br>
+
+    <label for="amount3">Rate your experience of Secondary school from very easy to very hard:</label>
+    <input type="text" id="amount3" class="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+    <div id="slider3" class="slider"></div>
+    <br>
+
+    <label for="amount4">Rate your experience of playing football from very easy to do to very hard to do:</label>
+    <input type="text" id="amount4" class="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+    <div id="slider4" class="slider"></div>
+    <br>
+</div>
+<div id="slidercont2">
+    <label for="amount5">Rate your experience of using computers from very easy to use to very hard to use:</label>
+    <input type="text" id="amount5" class="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+    <div id="slider5" class="slider"></div>
+    <br>
+
+    <label for="amount6">Rate your experience of cooking rice from very easy to do to very hard to do:</label>
+    <input type="text" id="amount6" class="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+    <div id="slider6" class="slider"></div>
+    <br>
+
+    <label for="amount7">Rate your experience of press ups from very easy to do to very hard to do:</label>
+    <input type="text" id="amount7" class="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+    <div id="slider7" class="slider"></div>
+    <br>
+
+    <button type="submit" class="btn btn-default" id="slidersub"><a href="#complete">Submit</a></button>
+
+</div>
+
+
+<script>
+    var steps = [
+        "very easy",
+        "easy",
+        "not so easy",
+        "hard",
+        "very hard"
+    ];
+
+    $(function() {
+        $("#slider1").slider({
+            value: 0,
+            min: 0,
+            max: 4,
+            step: 1,
+            slide: function(event, ui) {
+                $("#amount1").val(steps[ui.value]);
+            }
+        });
+        $("#amount1").val(steps[$("#slider1").slider("value")]);
+    });
+
+    $(function() {
+        $("#slider2").slider({
+            value: 0,
+            min: 0,
+            max: 4,
+            step: 1,
+            slide: function(event, ui) {
+                $("#amount2").val(steps[ui.value]);
+            }
+        });
+        $("#amount2").val(steps[$("#slider2").slider("value")]);
+    });
+
+    $(function() {
+        $("#slider3").slider({
+            value: 0,
+            min: 0,
+            max: 4,
+            step: 1,
+            slide: function(event, ui) {
+                $("#amount3").val(steps[ui.value]);
+            }
+        });
+        $("#amount3").val(steps[$("#slider3").slider("value")]);
+    });
+
+    $(function() {
+        $("#slider4").slider({
+            value: 0,
+            min: 0,
+            max: 4,
+            step: 1,
+            slide: function(event, ui) {
+                $("#amount4").val(steps[ui.value]);
+            }
+        });
+        $("#amount4").val(steps[$("#slider4").slider("value")]);
+    });
+
+    $(function() {
+        $("#slider5").slider({
+            value: 0,
+            min: 0,
+            max: 4,
+            step: 1,
+            slide: function(event, ui) {
+                $("#amount5").val(steps[ui.value]);
+            }
+        });
+        $("#amount5").val(steps[$("#slider5").slider("value")]);
+    });
+
+    $(function() {
+        $("#slider6").slider({
+            value: 0,
+            min: 0,
+            max: 4,
+            step: 1,
+            slide: function(event, ui) {
+                $("#amount6").val(steps[ui.value]);
+            }
+        });
+        $("#amount6").val(steps[$("#slider6").slider("value")]);
+    });
+
+
+    //slider has fixed position to cause frustration
+    // (most likely the answer wont be very easy and likely
+    //will be clicked more than 3 times to move it)
+    $(function() {
+        $("#slider7").slider({
+            value: 0,
+            min: 0,
+            max: 0,
+            step: 0,
+            slide: function(event, ui) {
+                $("#amount7").val(steps[ui.value]);
+            }
+        });
+        $("#amount7").val(steps[$("#slider7").slider("value")]);
+    });
+</script>

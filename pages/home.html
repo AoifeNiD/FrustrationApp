@@ -1,0 +1,215 @@
+<!-- home.html -->
+<div id="home" class="main">
+    <section id="form1" class="form">
+        <form action="demo.php" method="post" id="register1">
+            <h2>Profile</h2>
+            <h3>Before we start, we would like to know more about you! Please fill out your details below and save.</h3>
+            <label for="name">Name:</label>
+            <input type="text" class="page1" name="name" id="name" ng-model="name"
+                   placeholder="First Name" required />
+
+            <label for="name">Surname:</label>
+            <input type="text" class="page1" name="surname" id="surname" ng-model="surname"
+                   placeholder="Surname" required />
+
+            <label for="age">Age:</label>
+            <input type="text" class="page1" name="age" id="age" ng-model="age"
+                   placeholder="35" required />
+
+            <label for="gender">Gender:</label>
+            <input type="radio"  name="gender" id="gender" value="male" ng-model="gender"> <h3> Male</h3>
+            <input type="radio"  name="gender" id="gender" value="female" ng-model="gender"> <h3> Female</h3>
+            <input type="radio"  name="gender" id="gender" value="other" ng-model="gender"> <h3> Not specified</h3>
+
+            <label for="email">Email address:</label>
+            <input type="email" class="page1" name="email" id="email" ng-model="email"
+                   placeholder="myaddress@mail.ie" required />
+
+            <label for="home">City of Residence:</label>
+            <input type="text" class="page1" name="homecity" id="homecity" ng-model="homecity"
+                   placeholder="eg. Helsinki" required />
+
+            <label for="job">Occupation:</label>
+            <input type="text" class="page1" name="job" id="job" ng-model="job"
+                   placeholder="eg. Coal Miner" required />
+        </form>
+
+    </section>
+    <section id="form2" class="form">
+        <form action="demo.php" method="post" id="register2">
+            <h2>Background</h2>
+            <br>
+            <label for="colour">Favorite Colour:</label>
+            <input type="text" class="page1" name="colour" id="colour"
+                   placeholder="eg. Blue" required />
+
+            <label for="city">Favorite City:</label>
+            <input type="text" class="page1" name="city" id="city"
+                   placeholder="eg. Minsk" required />
+
+            <label for="birthplace">Place of Birth:</label>
+            <input type="text" class="page1" name="birthplace" id="birthplace"
+                   placeholder="eg. Wales" required />
+
+            <label for="movie">Preferred Movie Genre:</label>
+            <section class="check">
+            <input type="checkbox" class="page1" id="movie" name="fav1" value="sci-fi"> <h3> Sci-Fi</h3><br>
+            <input type="checkbox" class="page1" id="movie" name="fav1" value="fantasy"> <h3> Fantasy</h3><br>
+            <input type="checkbox" class="page1" id="movie" name="fav1" value="crime"> <h3> Crime</h3><br>
+            <input type="checkbox" class="page1" id="movie" name="fav1" value="action"> <h3> Action</h3><br>
+            <input type="checkbox" class="page1" id="movie" name="fav1" value="comedy"> <h3> Comedy</h3><br>
+            <input type="checkbox" class="page1" id="movie" name="fav1" value="drama"> <h3> Drama</h3><br>
+            </section>
+            <section class="check">
+            <input type="checkbox" class="page1" id="movie" name="fav1" value="horror"> <h3> Horror</h3><br>
+            <input type="checkbox" class="page1" id="movie" name="fav1" value="thriller"> <h3> Thriller</h3><br>
+            <input type="checkbox" class="page1" id="movie" name="fav1" value="romance"> <h3> Romance</h3><br>
+            <input type="checkbox" class="page1" id="movie" name="fav1" value="mystery"> <h3> Mystery</h3><br>
+            <input type="checkbox" class="page1" id="movie" name="fav1" value="documentary"> <h3> Documentary</h3>
+            </section><br>
+
+
+            <label for="drink">Choose one:</label>
+            <input type="radio"  name="drink" id="drink" value="wine"> <h3>Wine</h3>
+            <input type="radio"  name="drink" id="drink" value="spirits"> <h3>Spirits</h3>
+            <input type="radio"  name="drink" id="drink" value="beer"> <h3>Beer</h3>
+
+            <label for="dreamjob">My Dream Job:</label>
+            <input type="text" class="page1" name="dreamjob" id="dreamjob"
+                   placeholder="eg. Astronaught" required />
+        </form>
+
+    </section>
+    <section id="form3" class="form">
+        <form action="demo.php" method="post" id="register3">
+            <h2>Computer Knowledge</h2>
+            <br>
+            <label for="device">Device I use most frequently:</label>
+            <input type="text" class="page1" name="device" id="device"
+                   placeholder="eg. Phone" required />
+
+            <label for="OS">Operating System preference:</label>
+            <input type="radio"  name="fav2" id="OS" value="Apple"> <h3>Apple</h3>
+            <input type="radio"  name="fav2" id="OS" value="Android"> <h3>Android</h3>
+            <input type="radio"  name="fav2" id="OS" value="Windows"> <h3>Windows</h3><br>
+
+            <label for="browser">Browser preference:</label>
+            <select>
+                <option id="browser" value="Google">Google</option>
+                <option id="browser" value="Firefox">Firefox</option>
+                <option id="browser" value="Safari">Safari</option>
+                <option id="browser" value="Opera">Opera</option>
+                <option id="browser" value="Opera">Internet Explorer</option>
+            </select>
+
+            <label for="knowledge">Level of working knowledge of the Internet:</label>
+            <input type="checkbox" class="page1" id="knowledge" name="knowledge" value="poor"> <h3> poor</h3><br>
+            <input type="checkbox" class="page1" id="knowledge" name="knowledge" value="moderate"> <h3> moderate</h3><br>
+            <input type="checkbox" class="page1" id="knowledge" name="knowledge" value="good"> <h3> good</h3><br>
+            <input type="checkbox" class="page1" id="knowledge" name="knowledge" value="vgood"> <h3> very good</h3><br>
+            <input type="checkbox" class="page1" id="knowledge" name="knowledge" value="expert"> <h3> expert</h3>
+
+            <label for="bool">"I am familiar with Boolean statements":</label>
+            <input type="radio"  name="fav3" id="bool" value="Apple"> <h3>True</h3>
+            <input type="radio"  name="fav3" id="bool" value="Android"> <h3>False</h3>
+
+            <label for="mob">"I use my mobile most for":</label>
+            <select>
+                <option id="mob" value="internet">Internet</option>
+                <option id="mob" value="music">Music</option>
+                <option id="mob" value="social">Social Media</option>
+                <option id="mob" value="camera">Camera</option>
+                <option id="mob" value="txtncal">Texts and calls</option>
+            </select>
+
+        </form>
+
+    </section>
+    <section id="form4" class="form">
+        <form action="demo.php" method="post" id="register4">
+            <h2>Medical Self-Assessment</h2>
+            <br>
+            <label for="height">My height:</label>
+            <input type="text" class="page1" name="height" id="height"
+                   placeholder="eg. 5ft 5in OR 168cm " required />
+
+            <label for="city">My weight:</label>
+            <input type="text" class="page1" name="city" id="city"
+                   placeholder="eg. 9st 10lb OR 58kg " required />
+
+            <label for="fit">Fitness level:</label>
+            <input type="checkbox" class="page1" id="fit" name="knowledge" value="poor"> <h3> poor</h3><br>
+            <input type="checkbox" class="page1" id="fit" name="knowledge" value="moderate"> <h3> moderate</h3><br>
+            <input type="checkbox" class="page1" id="fit" name="knowledge" value="good"> <h3> good</h3><br>
+            <input type="checkbox" class="page1" id="fit" name="knowledge" value="vgood"> <h3> very good</h3><br>
+            <input type="checkbox" class="page1" id="fit" name="knowledge" value="expert"> <h3> excellent</h3>
+
+            <label for="hand">Hand preference:</label>
+            <input type="radio"  name="fav5" id="hand" value="right"> <h3>Right</h3>
+            <input type="radio"  name="fav5" id="hand" value="left"> <h3>Left</h3>
+            <input type="radio"  name="fav5" id="hand" value="either"> <h3>Either</h3>
+
+
+            <label for="wrkout">Favorite Workouts:</label>
+            <input type="text" class="page1" name="wrkout" id="wrkout"
+                   placeholder="eg. Yoga" required />
+            <input type="text" class="page1" name="wrkout" id="wrkout"
+                   placeholder="eg. Swimming" required />
+
+
+            <label for="type">"I find _____ the most difficult":</label>
+            <select>
+                <option id="type" value="weights">Weight Training</option>
+                <option id="type" value="cardio">Cardio</option>
+                <option id="type" value="flexi">Flexibility</option>
+            </select>
+        </form>
+
+    </section>
+    <section id="form5" class="form">
+        <form action="demo.php" method="post" id="register5">
+            <h2>Family</h2>
+            <br>
+            <label for="browser">Marital Status:</label>
+            <select>
+                <option id="marital" value="Single">Single</option>
+                <option id="marital" value="Relationship">In a Relationship</option>
+                <option id="marital" value="Married">Married</option>
+                <option id="marital" value="Divorced">Divorced</option>
+                <option id="marital" value="Widowed">Widowed</option>
+                <option id="marital" value="NotSay">Rather not say</option>
+            </select>
+
+            <label for="kids">Children:</label>
+            <input type="radio"  name="kids" id="kids" value="none"> <h3>None</h3>
+            <input type="radio"  name="kids" id="kids" value="one"> <h3>1</h3>
+            <input type="radio"  name="kids" id="kids" value="two"> <h3>2</h3>
+            <input type="radio"  name="kids" id="kids" value="three"> <h3>3</h3>
+            <input type="radio"  name="kids" id="kids" value="four"> <h3>4</h3>
+            <input type="radio"  name="kids" id="kids" value="more"> <h3>5+</h3>
+
+            <label for="sibs">Siblings:</label>
+            <input type="text" class="page1" name="sibs" id="sibs"
+                   placeholder="eg. 2 Brothers" required />
+            <input type="text" class="page1" name="sibs" id="sibs"
+                   placeholder="eg. 1 Sister" required />
+
+            <label for="cuz">Relationship with Cousins:</label>
+            <input type="checkbox" class="page1" id="cuz" name="cuz" value="vclose"> <h3> Very Close</h3><br>
+            <input type="checkbox" class="page1" id="cuz" name="cuz" value="mod"> <h3> I know them well</h3><br>
+            <input type="checkbox" class="page1" id="cuz" name="cuz" value="less"> <h3> I don't know them well</h3><br>
+            <input type="checkbox" class="page1" id="cuz" name="cuz" value="least"> <h3> I don't know them at all</h3><br>
+
+            <label for="maiden">Mother's maiden name:</label>
+            <input type="text" class="page1" name="maiden" id="maiden"
+                   placeholder="eg. Connolly" required />
+
+            <label for="pet">Pets:</label>
+            <input type="checkbox" class="page1" id="pet" name="pet" value="poor"> <h3>I have a pet</h3><br>
+            <input type="checkbox" class="page1" id="pet" name="pet" value="moderate"> <h3>I don't have a pet</h3><br>
+
+        </form>
+<!-- Leave out submit to cause frustration.. no sign it is saved (heuristics) -->
+    </section>
+
+</div>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<section id="regcontainer">
+    <h3>Register:</h3>
+<form>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" ng-model="user.email">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" ng-model="user.password">
+    </div>
+
+
+  <!-- Decide whether to link to test from here?
+  -- More frustrating if it doesn't give feedback you are registered(heuristics).
+  -- Also set timer here? -->
+    <button type="submit" class="btn btn-default"><a href="#">Submit</a></button>
+</form>
+</section>
+<script type="text/javascript" >
+    document.getElementById( "refresh" ).onclick = Demo.refresh;
+
+</script>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

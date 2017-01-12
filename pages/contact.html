@@ -1,0 +1,30 @@
+<!-- contact.html PUZZLE-->
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300">
+<link rel="stylesheet" href="https://cdn.rawgit.com/yahoo/pure-release/v0.6.0/pure-min.css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/yahoo/pure-release/v0.6.0/grids-responsive-min.css">
+<!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+
+<div class="page-header text-center">
+    <h1>{{ message }}</h1>
+</div>
+<br>
+<br>
+<!--Snap Puzzle by Pixabay-->
+<div id="puzzle-containment" style="border-top: 1px solid #eee;border-bottom:1px solid #eee;background:#fafafa;margin:0px 0;padding:0px;text-align:center">
+    <div class="pure-g" style="max-width:1280px;margin:auto">
+        <div class="pure-u-1 pure-u-md-1-2"><div style="margin:0px">
+            <img id="source_image" class="pure-img" src="trump.jpg">
+        </div></div>
+        <div class="pure-u-1 pure-u-md-1-2">
+            <div id="pile" style="margin:0px">
+                <div id="puzzle_solved" style="display:none;text-align:center;position:relative;top:25%">
+                    <h2 style="margin:0 0 20px">Well done!</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="jquery.snap-puzzle.js"></script>
+<script src="puzzle.js"></script>

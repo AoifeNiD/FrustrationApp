@@ -1,0 +1,133 @@
+/*Desktop/ Laptop */
+@media screen and (min-width : 1224px) {
+
+#main{
+    margin-top:10px;
+}
+   .form {
+        float: left;
+        padding: 0 0 0 1%;
+        margin: 0 0 0.5% 0;
+        width: 19.5%;
+        height: 100%;
+        border-right: 2px black solid;
+    }
+    .check{
+        width: 50%;
+        height: 150px;
+        float:left;
+    }
+    #form1{
+        margin-left: 1%;
+    }
+
+   .main label {
+        display: block;
+        margin: 8% 0 0 0;
+        font-family: sans-serif;
+        padding-bottom: 1%;
+    }
+    .page1 input:not([type]), input[type="text"], input[type="email"]{
+        width: 90%;
+        margin: 0 0 3% 0;
+    }
+
+    .page1 input[type="checkbox"]{
+        width: 10%;
+        margin: 0 2% 0 0;
+        display: inline-block;
+    }
+
+    h3{
+        margin: 0;
+        font-size: medium;
+        font-weight: lighter;
+        font-family: Gadugi;
+        display: inline-block;
+        margin-right: 4%;
+    }
+    h2{
+        margin: 0 12% 3% 0;
+        font-family: Gadugi;
+        font-size: x-large;
+    }
+
+    .main{
+        height: 729px;
+        width: 100%;
+    }
+
+    /*register css*/
+    .form-control input:not([type]), input[type="password"], input[type="email"]{
+         width: 80%;
+        margin: 0 0 3% 0;
+     }
+
+    #regcontainer button[type="submit"]{
+        width: 80%;
+        margin: 8% 0 0 0;
+        background-color: darkgrey;
+    }
+
+    #regcontainer{
+        border: 2px grey solid;
+        border-radius: 5%;
+        width: 50%;
+        padding: 5% 0 7% 10%;
+        margin: 3% 0 0 25%;
+    }
+    #regcontainer h3{
+        margin-left: 30%;
+        font-size: xx-large;
+        font-weight: 600;
+    }
+    button a{
+        color: dimgrey;
+    }
+    button a:hover {
+        text-decoration: none;
+        color: white;
+    }
+
+    /* required snapPuzzle styles */
+    .snappuzzle-wrap { position: relative; display: block; }
+    .snappuzzle-pile { position: relative; width: 600px;}
+    .snappuzzle-piece { cursor: move; }
+    .snappuzzle-slot { position: absolute; background: #fff; opacity: 1; border: 1px solid grey;}
+    .snappuzzle-slot-hover { background: #eee; }
+
+    #slidercont1{
+        width: 45%;
+        float: left;
+        margin: 1% 1% 1% 5%;
+        padding: 3%;
+        border: 2px grey solid;
+        border-radius: 10px;
+    }
+    #slidercont2{
+        width: 45%;
+        float: left;
+        margin: 1% 1% 1% 1%;
+        padding: 3%;
+        border: 2px grey solid;
+        border-radius: 10px;
+    }
+
+    .slider{
+        width: 30%;
+    }
+    #slidersub{
+        width: 80%;
+        margin: 8% 0 0 0;
+        background-color: darkgrey;
+    }
+#puzzledone{
+    margin:200px 0 20px 0;
+    font-size: x-large;
+}
+    
+    #complete{
+        padding: 5%;
+        margin-top:10%;
+    }
+}
